@@ -8,7 +8,7 @@
 #include "Hero.h"
 #include "Enemy.h"
 #include "Health.h"
-
+#include "BackGround.h"
 class MainScene :
 	public Scene
 {

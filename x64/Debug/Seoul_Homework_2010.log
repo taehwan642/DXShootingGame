@@ -1,4 +1,3 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Seoul_Homework.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Enemy.cpp
-C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Shoot\Enemy.cpp(75,39): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Seoul_Homework_2010.vcxproj -> C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Shoot\x64\Debug\DXShooting.exe
+  BackGround.cpp
+  Seoul_Homework_2010.vcxproj -> C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\x64\Debug\DXShooting.exe

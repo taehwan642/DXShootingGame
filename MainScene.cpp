@@ -4,6 +4,7 @@
 
 void MainScene::Init()
 {
+	BackGroundMNG::GetInstance()->BackGroundCreate();
 	BulletMNG::GetInstance()->Create();
 	HeroMNG::GetInstance()->HeroCreate();
 	EnemyMNG::GetInstance()->Create();
@@ -25,8 +26,8 @@ void MainScene::Update()
 		monsterspawntimer = 0;
 	}
 
-	if (HealthMNG::GetInstance()->nHealth <= 0)
-		Director::GetInstance()->ChangeScene(new EndScene); 
+	//if (HealthMNG::GetInstance()->nHealth <= 0)
+		//Director::GetInstance()->ChangeScene(new EndScene); 
 
 	/*if(DXUTWasKeyPressed('U'))
 		Director::GetInstance()->ChangeScene(new EndScene);*/
