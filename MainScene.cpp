@@ -30,9 +30,8 @@ void MainScene::Update()
 	//if (HealthMNG::GetInstance()->nHealth <= 0)
 		//Director::GetInstance()->ChangeScene(new EndScene); 
 
-	/*if(DXUTWasKeyPressed('U'))
-		Director::GetInstance()->ChangeScene(new EndScene);*/
-	
+	if (DXUTWasKeyPressed('U'))
+		HealthMNG::GetInstance()->HealthUp();
 }
 
 void MainScene::OnExit()

@@ -10,6 +10,7 @@ public:
 	Hero();
 	float fUntuchableTime;
 	bool bAreyouHurt;
+	float fAlpha;
 };
 
 class HeroMNG : public Singleton<HeroMNG>

@@ -1,6 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Seoul_Homework.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Hero.cpp
-C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Hero.cpp(30): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Hero.cpp(30,39): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Hero.cpp(30,55): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+  Health.cpp
+C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\Health.cpp(33,34): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   Seoul_Homework_2010.vcxproj -> C:\Users\skill_7\Desktop\Taehwan-DXShootingGame-master\Taehwan-DXShootingGame-master\ShootingEngine\x64\Debug\DXShooting.exe

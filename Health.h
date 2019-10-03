@@ -16,5 +16,6 @@ public:
 
 	void HealthCountDown();
 	void HealthMinus();
+	void HealthUp();
 	vector<Health*> vechealt;
 };

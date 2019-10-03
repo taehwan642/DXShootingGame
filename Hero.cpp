@@ -2,7 +2,7 @@
 #include "Hero.h"
 
 void Hero::Update()
-{	
+{
 	if (DXUTIsKeyDown('W') && _position.y > 45.5f)
 	{
 		_position.y -= 6.5f;
@@ -19,7 +19,6 @@ void Hero::Update()
 	{
 		_position.x += 6.5f;
 	}
-	cout << fUntuchableTime << endl;
 	//Need To make ONTOUCHABLE time;
 	for (auto it : EnemyMNG::GetInstance()->enems)
 	{
@@ -35,9 +34,10 @@ void Hero::Update()
 			}
 		}
 	}
+	fAlpha = rand() % 2;
 	if (bAreyouHurt)
 	{
-		_color = { 0.5f,0.5f,0.5f,1 };
+		_color = { 1,1,1,fAlpha };
 		fUntuchableTime += Time::deltaTime;
 	}
 	else
@@ -63,6 +63,7 @@ Hero::Hero()
 	fUntuchableTime = 0;
 	_visible = true;
 	bAreyouHurt = false;
+	fAlpha = 0;
 }
 void HeroMNG::HeroCreate()
 {
@@ -76,7 +77,7 @@ void HeroMNG::HeroMovement()
 void HeroMNG::DeleteHero()
 {
 	delete hero;
-	
+
 }
 
 

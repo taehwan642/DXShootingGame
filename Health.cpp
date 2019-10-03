@@ -5,7 +5,7 @@
 Health::Health()
 {
 	Create(L"PLANE.png");
-	_visible = false;		
+	_visible = false;
 	//_position.x = 100.0f;
 	//_position.y = 100.0f;
 	_scale.x = 0.1f;
@@ -14,7 +14,7 @@ Health::Health()
 
 void Health::HealthChanger()
 {
-	 
+
 }
 
 void HealthMNG::HealthCountDown()
@@ -31,7 +31,7 @@ void HealthMNG::HealthCountDown()
 		vechealt[i]->_position.y = 100.0f;
 		vechealt[i]->_visible = true;
 		vechealt[i]->_position.x = 100 + (50 * i);
-	
+
 		cout << "SIBA" << endl;
 	}
 }
@@ -44,7 +44,30 @@ void HealthMNG::HealthMinus()
 		{
 			nHealth--;
 			vechealt[i]->_visible = false;
-			cout << "GG" << endl;
+			break;
+		}
+	}
+}
+//안비어진칸 다음이 안비어져있으면 그 칸을 채우면 됨
+void HealthMNG::HealthUp()
+{
+	if (vechealt[0]->_visible && vechealt[1]->_visible && vechealt[2]->_visible && vechealt[3]->_visible && vechealt[4]->_visible)
+		return;
+
+	if (!vechealt[0]->_visible && !vechealt[1]->_visible && !vechealt[2]->_visible && !vechealt[3]->_visible && !vechealt[4]->_visible)
+	{
+		vechealt[4]->_visible = true;
+		return;
+	}
+
+	for (int i = 0; i < vechealt.size(); i++)
+	{
+		
+		if (vechealt[i]->_visible)
+		{
+			nHealth++;
+			vechealt[i - 1]->_visible = true;
+			cout << nHealth << endl;
 			break;
 		}
 	}
