@@ -11,28 +11,41 @@ Enemy::Enemy()
 	_visible = false;
 	timer = 0;
 	Whatareyou = true;
+	bIshit = false;
 }
 
 void Enemy::Update()
 {
 	if (!_visible)
 		return;
-
-	timer -= Time::deltaTime;
-	if (timer < 0)
+	if (bIshit)
 	{
-		_visible = false;
-		timer = 5.0f;
-	}
-	OnlineState();
-	if (Whatareyou)
-	{
-		Strike(5);
+		if (Animation(L"", 3, 0.1f, 1))
+		{
+			_visible = false;
+			bIshit = false;
+			
+		}
 	}
 	else
 	{
-		LeftRight(5);
+		timer -= Time::deltaTime;
+		if (timer < 0)
+		{
+			_visible = false;
+			timer = 5.0f;
+		}
+		OnlineState();
+		if (Whatareyou)
+		{
+			Strike(5);
+		}
+		else
+		{
+			LeftRight(5);
+		}
 	}
+
 }
 
 void Enemy::Strike(float spd)
@@ -66,6 +79,7 @@ void EnemyMNG::ShotBullet()
 	{
 		if (!it->_visible)
 		{
+			it->Create(L"ENEMY.png");
 			it->_visible = true;
 			it->timer = 5;
 			//Hero의 Position을 받아와야 함;

@@ -15,7 +15,7 @@ public:
 	float timer;
 	bool Whatareyou;
 	void OnlineState();
-
+	bool bIshit;
 };
 
 class EnemyMNG : public Singleton<EnemyMNG>

@@ -44,6 +44,7 @@ void HealthMNG::HealthMinus()
 		{
 			nHealth--;
 			vechealt[i]->_visible = false;
+			cout << "GG" << endl;
 			break;
 		}
 	}

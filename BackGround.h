@@ -5,8 +5,7 @@ class BackGround : public Sprite
 public:
 	BackGround();
 	void Update() override;
-	Sprite* s1;
-	Sprite* s2;
+	Sprite* sp[2];
 };
 
 class BackGroundMNG : public Singleton<BackGroundMNG>

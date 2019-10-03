@@ -4,10 +4,11 @@
 
 void MainScene::Init()
 {
+	//More Later to Init, Goes More Back(Layer)
 	BackGroundMNG::GetInstance()->BackGroundCreate();
 	BulletMNG::GetInstance()->Create();
-	HeroMNG::GetInstance()->HeroCreate();
 	EnemyMNG::GetInstance()->Create();
+	HeroMNG::GetInstance()->HeroCreate();
 	HealthMNG::GetInstance()->HealthCountDown();
 	monsterspawntimer = 3;
 }	

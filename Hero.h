@@ -8,6 +8,8 @@ class Hero :
 public:
 	void Update() override;
 	Hero();
+	float fUntuchableTime;
+	bool bAreyouHurt;
 };
 
 class HeroMNG : public Singleton<HeroMNG>
