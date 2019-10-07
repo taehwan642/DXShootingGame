@@ -48,7 +48,6 @@ void HealthMNG::HealthMinus()
 		}
 	}
 }
-//안비어진칸 다음이 안비어져있으면 그 칸을 채우면 됨
 void HealthMNG::HealthUp()
 {
 	if (vechealt[0]->_visible && vechealt[1]->_visible && vechealt[2]->_visible && vechealt[3]->_visible && vechealt[4]->_visible)
@@ -67,7 +66,6 @@ void HealthMNG::HealthUp()
 		{
 			nHealth++;
 			vechealt[i - 1]->_visible = true;
-			cout << nHealth << endl;
 			break;
 		}
 	}

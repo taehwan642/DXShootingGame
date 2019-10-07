@@ -4,8 +4,9 @@
 
 void MainScene::Init()
 {
-	//More Later to Init, Goes More Back(Layer)
+	//More Later to Initalize, Goes More Back(Layer)
 	BackGroundMNG::GetInstance()->BackGroundCreate();
+	ItemMNG::GetInstance()->CreateHealItem();
 	BulletMNG::GetInstance()->Create();
 	EnemyMNG::GetInstance()->Create();
 	HeroMNG::GetInstance()->HeroCreate();
@@ -27,11 +28,13 @@ void MainScene::Update()
 		monsterspawntimer = 0;
 	}
 
-	//if (HealthMNG::GetInstance()->nHealth <= 0)
-		//Director::GetInstance()->ChangeScene(new EndScene); 
+	/*if (HealthMNG::GetInstance()->nHealth <= 0)
+		Director::GetInstance()->ChangeScene(new EndScene); */
 
+	//item Heals you
 	if (DXUTWasKeyPressed('U'))
 		HealthMNG::GetInstance()->HealthUp();
+
 }
 
 void MainScene::OnExit()

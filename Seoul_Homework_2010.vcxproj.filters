@@ -164,6 +164,7 @@
     <ClCompile Include="Mover.cpp" />
     <ClCompile Include="NewBullet.cpp" />
     <ClCompile Include="BackGround.cpp" />
+    <ClCompile Include="Item.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -220,6 +221,7 @@
     <ClInclude Include="Mover.h" />
     <ClInclude Include="NewBullet.h" />
     <ClInclude Include="BackGround.h" />
+    <ClInclude Include="Item.h" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

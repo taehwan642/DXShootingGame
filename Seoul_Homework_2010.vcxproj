@@ -392,6 +392,7 @@
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Health.cpp" />
     <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="MainScene.cpp" />
     <ClCompile Include="Mover.cpp" />
     <ClCompile Include="NewBullet.cpp" />
@@ -409,6 +410,7 @@
     <ClInclude Include="Font.h" />
     <ClInclude Include="Health.h" />
     <ClInclude Include="Hero.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="MainScene.h" />
     <ClInclude Include="Mover.h" />
     <ClInclude Include="NewBullet.h" />

@@ -32,6 +32,15 @@ void Bullet::Update()
 				{
 					it->_visible = false;
 					bIshit = true;
+					for (auto him : ItemMNG::GetInstance()->heals)
+					{
+						if (!him->_visible)
+						{
+							him->_visible = true;
+							him->_position = it->_position;
+							break;
+						}
+					}
 				}
 			}
 		}

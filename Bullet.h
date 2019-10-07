@@ -2,6 +2,7 @@
 #include "Sprite.h"
 #include "Hero.h"
 #include "Enemy.h"
+#include "Item.h"
 class Bullet :
 	public Sprite
 {

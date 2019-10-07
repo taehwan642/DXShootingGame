@@ -10,11 +10,12 @@ public:
 	void Update() override;
 	void Strike(float spd);
 	void LeftRight(float spd);
+	void OnlineState();
+public:
 	float time;
 	float pos;
 	float timer;
 	bool Whatareyou;
-	void OnlineState();
 	bool bIshit;
 };
 
