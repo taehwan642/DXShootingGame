@@ -36,9 +36,12 @@ void Bullet::Update()
 					{
 						if (!him->_visible)
 						{
-							him->_visible = true;
-							him->_position = it->_position;
-							break;
+							if (fItem == 1)
+							{
+								him->_visible = true;
+								him->_position = it->_position;
+								break;
+							}
 						}
 					}
 				}
@@ -57,6 +60,7 @@ Bullet::Bullet()
 	_visible = false;
 	timer = 5;
 	bIshit = false;
+	fItem = 0;
 }
 
 void BulletMNG::Create()
@@ -77,7 +81,8 @@ void BulletMNG::ShotBullet()
 			it->_visible = true;
 			it->Timer = 5;
 			it->Create(L"SPIT.png");
-
+			it->fItem = rand() % 10;
+			cout << it->fItem << endl;
 			//Hero의 Position을 받아와야 함;
 			it->_position = HeroMNG::GetInstance()->hero->_position;
 			break;

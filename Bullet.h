@@ -11,6 +11,7 @@ public:
 	Bullet();
 	float timer;
 	bool bIshit;
+	float fItem;
 };
 
 class BulletMNG : public Singleton<BulletMNG>

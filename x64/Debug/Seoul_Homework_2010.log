@@ -1,6 +1,7 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Seoul_Homework.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Item.cpp
-C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Item.cpp(19): warning C4238:  nonstandard extension used: class rvalue used as lvalue
-C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Item.cpp(19,33): warning C4238:  nonstandard extension used: class rvalue used as lvalue
-C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Item.cpp(19,75): warning C4238:  nonstandard extension used: class rvalue used as lvalue
+  Bullet.cpp
+C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Bullet.cpp(31): warning C4238:  nonstandard extension used: class rvalue used as lvalue
+C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Bullet.cpp(31,40): warning C4238:  nonstandard extension used: class rvalue used as lvalue
+C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Bullet.cpp(31,56): warning C4238:  nonstandard extension used: class rvalue used as lvalue
+C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\Bullet.cpp(84,23): warning C4244:  '=': conversion from 'int' to 'float', possible loss of data
   Seoul_Homework_2010.vcxproj -> C:\Users\taehw\OneDrive\바탕 화면\DXShootingGame-master\DXShootingGame-master\x64\Debug\DXShooting.exe

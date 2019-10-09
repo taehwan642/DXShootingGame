@@ -11,6 +11,10 @@ void HealItem::Update()
 {
 	_position.y += 3;
 	DoHeal();
+	if (_position.y > 900)
+	{
+		_visible = false;
+	}
 }
 
 void HealItem::DoHeal()
