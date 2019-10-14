@@ -25,7 +25,6 @@ void HealItem::DoHeal()
 		HealthMNG::GetInstance()->HealthUp();
 		_visible = false;
 		_position = { 123123, 123123 };
-		cout << "1" << endl;
 		return;
 	}
 }

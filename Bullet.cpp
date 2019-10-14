@@ -82,7 +82,6 @@ void BulletMNG::ShotBullet()
 			it->Timer = 5;
 			it->Create(L"SPIT.png");
 			it->fItem = rand() % 10;
-			cout << it->fItem << endl;
 			//Hero의 Position을 받아와야 함;
 			it->_position = HeroMNG::GetInstance()->hero->_position;
 			break;
